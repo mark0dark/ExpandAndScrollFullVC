@@ -8,6 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
-@interface AJViewController : UIViewController
 
+@interface AJViewController : UITabBarController <UITabBarControllerDelegate>
+{
+    //当前tab bar 指示条的宽度
+    float _sliderWidth;
+}
 @end

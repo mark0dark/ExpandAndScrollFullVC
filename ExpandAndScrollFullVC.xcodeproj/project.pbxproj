@@ -7,6 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A419A9B61795816C00B3DF53 /* AJFirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A419A9B51795816C00B3DF53 /* AJFirstViewController.m */; };
+		A419A9BC1795848C00B3DF53 /* AJNextLevelVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A419A9BB1795848C00B3DF53 /* AJNextLevelVC.m */; };
+		A419A9C0179584EF00B3DF53 /* AJSecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A419A9BF179584EF00B3DF53 /* AJSecondViewController.m */; };
+		A419A9C21795855B00B3DF53 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A419A9C11795855B00B3DF53 /* QuartzCore.framework */; };
+		A419A9C81795860A00B3DF53 /* AJExpandAndScrollFullVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A419A9C51795860A00B3DF53 /* AJExpandAndScrollFullVC.m */; };
+		A419A9C91795860A00B3DF53 /* UIView+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = A419A9C71795860A00B3DF53 /* UIView+Additions.m */; };
+		A419A9CF1795861A00B3DF53 /* tab_home@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A419A9CC1795861A00B3DF53 /* tab_home@2x.png */; };
+		A419A9D01795861A00B3DF53 /* tab_home_pressed@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A419A9CD1795861A00B3DF53 /* tab_home_pressed@2x.png */; };
+		A419A9D11795861A00B3DF53 /* tab_slider@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A419A9CE1795861A00B3DF53 /* tab_slider@2x.png */; };
 		A45C7718179529580017E8D1 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A45C7717179529580017E8D1 /* UIKit.framework */; };
 		A45C771A179529580017E8D1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A45C7719179529580017E8D1 /* Foundation.framework */; };
 		A45C771C179529580017E8D1 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A45C771B179529580017E8D1 /* CoreGraphics.framework */; };
@@ -17,10 +26,23 @@
 		A45C772C179529580017E8D1 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A45C772B179529580017E8D1 /* Default@2x.png */; };
 		A45C772E179529580017E8D1 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A45C772D179529580017E8D1 /* Default-568h@2x.png */; };
 		A45C7731179529580017E8D1 /* AJViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A45C7730179529580017E8D1 /* AJViewController.m */; };
-		A45C7734179529580017E8D1 /* AJViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A45C7732179529580017E8D1 /* AJViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A419A9B41795816C00B3DF53 /* AJFirstViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AJFirstViewController.h; sourceTree = "<group>"; };
+		A419A9B51795816C00B3DF53 /* AJFirstViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AJFirstViewController.m; sourceTree = "<group>"; };
+		A419A9BA1795848C00B3DF53 /* AJNextLevelVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AJNextLevelVC.h; sourceTree = "<group>"; };
+		A419A9BB1795848C00B3DF53 /* AJNextLevelVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AJNextLevelVC.m; sourceTree = "<group>"; };
+		A419A9BE179584EF00B3DF53 /* AJSecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AJSecondViewController.h; sourceTree = "<group>"; };
+		A419A9BF179584EF00B3DF53 /* AJSecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AJSecondViewController.m; sourceTree = "<group>"; };
+		A419A9C11795855B00B3DF53 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		A419A9C41795860A00B3DF53 /* AJExpandAndScrollFullVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AJExpandAndScrollFullVC.h; sourceTree = "<group>"; };
+		A419A9C51795860A00B3DF53 /* AJExpandAndScrollFullVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AJExpandAndScrollFullVC.m; sourceTree = "<group>"; };
+		A419A9C61795860A00B3DF53 /* UIView+Additions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Additions.h"; sourceTree = "<group>"; };
+		A419A9C71795860A00B3DF53 /* UIView+Additions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Additions.m"; sourceTree = "<group>"; };
+		A419A9CC1795861A00B3DF53 /* tab_home@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tab_home@2x.png"; sourceTree = "<group>"; };
+		A419A9CD1795861A00B3DF53 /* tab_home_pressed@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tab_home_pressed@2x.png"; sourceTree = "<group>"; };
+		A419A9CE1795861A00B3DF53 /* tab_slider@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tab_slider@2x.png"; sourceTree = "<group>"; };
 		A45C7714179529580017E8D1 /* ExpandAndScrollFullVC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ExpandAndScrollFullVC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A45C7717179529580017E8D1 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		A45C7719179529580017E8D1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -36,7 +58,6 @@
 		A45C772D179529580017E8D1 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		A45C772F179529580017E8D1 /* AJViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AJViewController.h; sourceTree = "<group>"; };
 		A45C7730179529580017E8D1 /* AJViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AJViewController.m; sourceTree = "<group>"; };
-		A45C7733179529580017E8D1 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/AJViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,6 +65,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A419A9C21795855B00B3DF53 /* QuartzCore.framework in Frameworks */,
 				A45C7718179529580017E8D1 /* UIKit.framework in Frameworks */,
 				A45C771A179529580017E8D1 /* Foundation.framework in Frameworks */,
 				A45C771C179529580017E8D1 /* CoreGraphics.framework in Frameworks */,
@@ -53,6 +75,35 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A419A9C31795860900B3DF53 /* FunctionClass */ = {
+			isa = PBXGroup;
+			children = (
+				A419A9C41795860A00B3DF53 /* AJExpandAndScrollFullVC.h */,
+				A419A9C51795860A00B3DF53 /* AJExpandAndScrollFullVC.m */,
+				A419A9C61795860A00B3DF53 /* UIView+Additions.h */,
+				A419A9C71795860A00B3DF53 /* UIView+Additions.m */,
+			);
+			path = FunctionClass;
+			sourceTree = "<group>";
+		};
+		A419A9CA1795861A00B3DF53 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				A419A9CB1795861A00B3DF53 /* Tabbar */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		A419A9CB1795861A00B3DF53 /* Tabbar */ = {
+			isa = PBXGroup;
+			children = (
+				A419A9CC1795861A00B3DF53 /* tab_home@2x.png */,
+				A419A9CD1795861A00B3DF53 /* tab_home_pressed@2x.png */,
+				A419A9CE1795861A00B3DF53 /* tab_slider@2x.png */,
+			);
+			path = Tabbar;
+			sourceTree = "<group>";
+		};
 		A45C770B179529580017E8D1 = {
 			isa = PBXGroup;
 			children = (
@@ -73,6 +124,7 @@
 		A45C7716179529580017E8D1 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				A419A9C11795855B00B3DF53 /* QuartzCore.framework */,
 				A45C7717179529580017E8D1 /* UIKit.framework */,
 				A45C7719179529580017E8D1 /* Foundation.framework */,
 				A45C771B179529580017E8D1 /* CoreGraphics.framework */,
@@ -83,11 +135,17 @@
 		A45C771D179529580017E8D1 /* ExpandAndScrollFullVC */ = {
 			isa = PBXGroup;
 			children = (
+				A419A9C31795860900B3DF53 /* FunctionClass */,
 				A45C7726179529580017E8D1 /* AJAppDelegate.h */,
 				A45C7727179529580017E8D1 /* AJAppDelegate.m */,
 				A45C772F179529580017E8D1 /* AJViewController.h */,
 				A45C7730179529580017E8D1 /* AJViewController.m */,
-				A45C7732179529580017E8D1 /* AJViewController.xib */,
+				A419A9B41795816C00B3DF53 /* AJFirstViewController.h */,
+				A419A9B51795816C00B3DF53 /* AJFirstViewController.m */,
+				A419A9BE179584EF00B3DF53 /* AJSecondViewController.h */,
+				A419A9BF179584EF00B3DF53 /* AJSecondViewController.m */,
+				A419A9BA1795848C00B3DF53 /* AJNextLevelVC.h */,
+				A419A9BB1795848C00B3DF53 /* AJNextLevelVC.m */,
 				A45C771E179529580017E8D1 /* Supporting Files */,
 			);
 			path = ExpandAndScrollFullVC;
@@ -96,6 +154,7 @@
 		A45C771E179529580017E8D1 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				A419A9CA1795861A00B3DF53 /* Resources */,
 				A45C771F179529580017E8D1 /* ExpandAndScrollFullVC-Info.plist */,
 				A45C7720179529580017E8D1 /* InfoPlist.strings */,
 				A45C7723179529580017E8D1 /* main.m */,
@@ -163,7 +222,9 @@
 				A45C772A179529580017E8D1 /* Default.png in Resources */,
 				A45C772C179529580017E8D1 /* Default@2x.png in Resources */,
 				A45C772E179529580017E8D1 /* Default-568h@2x.png in Resources */,
-				A45C7734179529580017E8D1 /* AJViewController.xib in Resources */,
+				A419A9CF1795861A00B3DF53 /* tab_home@2x.png in Resources */,
+				A419A9D01795861A00B3DF53 /* tab_home_pressed@2x.png in Resources */,
+				A419A9D11795861A00B3DF53 /* tab_slider@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -177,6 +238,11 @@
 				A45C7724179529580017E8D1 /* main.m in Sources */,
 				A45C7728179529580017E8D1 /* AJAppDelegate.m in Sources */,
 				A45C7731179529580017E8D1 /* AJViewController.m in Sources */,
+				A419A9B61795816C00B3DF53 /* AJFirstViewController.m in Sources */,
+				A419A9BC1795848C00B3DF53 /* AJNextLevelVC.m in Sources */,
+				A419A9C0179584EF00B3DF53 /* AJSecondViewController.m in Sources */,
+				A419A9C81795860A00B3DF53 /* AJExpandAndScrollFullVC.m in Sources */,
+				A419A9C91795860A00B3DF53 /* UIView+Additions.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -189,14 +255,6 @@
 				A45C7721179529580017E8D1 /* en */,
 			);
 			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		A45C7732179529580017E8D1 /* AJViewController.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				A45C7733179529580017E8D1 /* en */,
-			);
-			name = AJViewController.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -299,6 +357,7 @@
 				A45C7739179529580017E8D1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
