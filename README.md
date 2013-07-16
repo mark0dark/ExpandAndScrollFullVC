@@ -3,9 +3,18 @@ ExpandAndScrollFullVC
 
 UITableView can ScrollFull and Expand animation
 
+1.What does it do
+=====================
 
-1.How to use it 
+  a.UITableview can Full when scroll
+  
+  b.DidSelect the cell can push into a new view with Expand animation
+  
+  c.Tabbar add the slider animation
+  
 
+2.How to use it 
+=====================
   a. inherit  ExpandAndScrollFullVC
   
   b. if you want to use the Expand animation, you must set the exandAndScrollFulldelegate
@@ -14,8 +23,8 @@ UITableView can ScrollFull and Expand animation
   
   d. write the delegate function
   
-2.KeyCode
-
+3.KeyCode
+=====================
     self.exandAndScrollFulldelegate = self;
 
     //middle view
@@ -27,13 +36,3 @@ UITableView can ScrollFull and Expand animation
     self.targetTable = _tableView;
     
     [self.view addSubview:_tableView];
-    
-#pragma mark -- ScrollFullAndFoldableVCDelegate
-
-  - (UIViewController *)getPushVCByIndexPath:(NSIndexPath *)indexPath
-  {
-      AJSecondLevelVC *vc = [[AJSecondLevelVC alloc] init];
-      vc.hidesBottomBarWhenPushed = YES;
-
-     return vc;
-  }
