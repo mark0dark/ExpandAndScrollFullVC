@@ -1,10 +1,3 @@
-//
-//  AJFirstViewController.m
-//  ExpandAndScrollFullVC
-//
-//  Created by Jianwen on 13-7-16.
-//  Copyright (c) 2013年 Dark. All rights reserved.
-//
 
 #import "AJFirstViewController.h"
 #import "AJNextLevelVC.h"
@@ -14,6 +7,8 @@
 @end
 
 @implementation AJFirstViewController
+
+#pragma mark -- Init View Frame
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -27,7 +22,6 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view.
     
     self.exandAndScrollFulldelegate = self;
 
@@ -42,8 +36,8 @@
     
 }
 
-#pragma mark -
-#pragma mark TableView Delegate
+#pragma mark -- TableView Delegate
+
 -(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     return 44.0;
@@ -83,7 +77,7 @@
 
 }
 
-#pragma mark - ScrollFullAndFoldableVCDelegate
+#pragma mark -- ScrollFullAndFoldableVCDelegate
 
 - (UIViewController*)getPushVCByIndexPath:(NSIndexPath *)indexPath
 {

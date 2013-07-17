@@ -11,7 +11,7 @@
 
 @interface AJViewController : UITabBarController <UITabBarControllerDelegate>
 {
-    //当前tab bar 指示条的宽度
+    //tabbarWidth
     float _sliderWidth;
 }
 @end

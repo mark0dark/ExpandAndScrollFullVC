@@ -1,10 +1,3 @@
-//
-//  AJExpandAndScrollFullVC.m
-//  ExpandAndScrollFullVC
-//
-//  Created by Jianwen on 13-7-16.
-//  Copyright (c) 2013年 Dark. All rights reserved.
-//
 
 #import "AJExpandAndScrollFullVC.h"
 #import <QuartzCore/QuartzCore.h>
@@ -21,6 +14,8 @@
 @end
 
 @implementation AJExpandAndScrollFullVC
+
+#pragma mark -- Init View
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -66,7 +61,7 @@
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
 }
 
-#pragma mark - expand about
+#pragma mark - Expand About
 
 - (void)expandFromCell:(UIView *)sourceCell
 {
@@ -74,7 +69,7 @@
     
     _expanded = YES;
     
-    //展开位置,以window的坐标系计算。
+    //expand frame
     float expandFromWindowY = [sourceCell convertPoint:CGPointMake(0, sourceCell.height) toView:self.view.window].y;
     
     CGRect topRect = CGRectMake(0, 0, 320, expandFromWindowY);
@@ -98,7 +93,7 @@
                          _expandTopMask.bottom = 0;
                          _expandBottomMask.top = HEIGHT_SCREEN;
                      } completion:^(BOOL finished) {
-                         //解锁界面
+                         //unlocked view
                          self.navigationController.view.userInteractionEnabled = YES;
                          self.tabBarController.view.userInteractionEnabled = YES;
                      }];
@@ -132,9 +127,8 @@
      ];
 }
 
-#pragma mark - sroll fulll
+#pragma mark -- Sroll fulll
 
-//变为全屏
 -(void)fullScreen
 {
     if(_fullAnimationStarted){return;}
@@ -263,7 +257,7 @@
     return;
 }
 
-#pragma mark - UIScrollViewDelegate
+#pragma mark -- UIScrollViewDelegate
 
 - (void)scrollViewWillBeginDragging:(UIScrollView *)scrollView
 {
@@ -280,17 +274,15 @@
     {
         CGFloat deltaY = scrollView.contentOffset.y-_prevContentOffsetY;
         _prevContentOffsetY = MAX(scrollView.contentOffset.y, -scrollView.contentInset.top);
-        
-        //向上滚动，则显示nav bar和 sort bar。
-        
+                
         if(abs(deltaY)>3)
         {
+            //up
             if(deltaY>0 && !_hadFullScreen)
             {
                 [self fullScreen];
             }
-            
-            //向下滚动，则隐藏nav bar和 顶部视图.
+            //down
             if(deltaY<0 && _hadFullScreen)
             {
                 [self restoreScreen];
@@ -318,7 +310,7 @@
 }
 
 
-#pragma mark - tools
+#pragma mark -- Public Function
 
 -(UIImage*)getImageFromView:(UIView*)view rect:(CGRect)rect
 {

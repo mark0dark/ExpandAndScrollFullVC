@@ -1,10 +1,3 @@
-//
-//  AJViewController.m
-//  ExpandAndScrollFullVC
-//
-//  Created by Jianwen on 13-7-16.
-//  Copyright (c) 2013年 Dark. All rights reserved.
-//
 
 #import "AJViewController.h"
 #import "AJFirstViewController.h"
@@ -18,6 +11,8 @@
 @end
 
 @implementation AJViewController
+
+#pragma mark -- Init View Frame
 
 - (void)viewDidLoad
 {
@@ -37,6 +32,7 @@
     
     self.delegate = self;
     self.selectedIndex = 0;
+    
     [self addTabBarSliderAtIndex:self.selectedIndex];
 }
 
@@ -64,8 +60,11 @@
     }
 }
 
-#pragma mark -- tab bar 相关
+#pragma mark -- Config Tabbar
 
+/**
+ * add background image for tabbar
+ */
 -(UITabBarItem*)createBarWithSeledImage:(NSString*)seledImage unseledImage:(NSString*)unseledImage
 {
     UITabBarItem* barItem = [[UITabBarItem alloc] init];
@@ -79,6 +78,10 @@
     return barItem;
 }
 
+
+/**
+ * add slider image for current selected tabbar item
+ */
 - (void)addTabBarSliderAtIndex:(NSUInteger)itemIndex
 {
     UIImage* sliderImage = [UIImage imageNamed:@"tab_slider"];
@@ -94,12 +97,16 @@
     [self.tabBar addSubview:slider];
 }
 
+/**
+ * get each tab item width
+ */
 - (CGFloat) horizontalLocationFor:(NSUInteger)tabIndex
 {
     CGFloat tabItemWidth = self.tabBar.frame.size.width / self.viewControllers.count;
     return (tabIndex * tabItemWidth);
 }
 
+#pragma mark -- Memory Manage
 
 - (void)didReceiveMemoryWarning
 {

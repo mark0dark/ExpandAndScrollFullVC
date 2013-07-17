@@ -24,31 +24,30 @@
 @end
 
 @interface AJExpandAndScrollFullVC : UIViewController
-<
-UITableViewDataSource,UITableViewDelegate
->
+<UITableViewDataSource, UITableViewDelegate>
 {
-    //展开相关参数
+    //expand parameters
     BOOL _expanded;
     UIImageView *_expandTopMask ;
     UIImageView *_expandBottomMask;
     
-    // 滚动全屏相关参数
+    //full scroll parameters
     float _fullFromY;
     CGFloat _prevContentOffsetY;
     
     BOOL _isScrollingTop;
     BOOL _hadFullScreen;
     
-    //标志位。在动画其间不接受其它的动画请求。
+    //flag,if animation begin, not begin other animation
     BOOL _fullAnimationStarted;
 }
 
+//pop to last ViewController
 -(void)popToMe;
 
-@property(nonatomic,weak)id <ExpandableAndScrollFullDelegate>  exandAndScrollFulldelegate;
-@property(nonatomic,weak)UITableView* targetTable;
-@property(nonatomic,assign)BOOL supportExpand;
+@property(nonatomic, weak) id <ExpandableAndScrollFullDelegate>  exandAndScrollFulldelegate;
+@property(nonatomic, weak) UITableView* targetTable;
+@property(nonatomic, assign) BOOL supportExpand;
 
 @end
 

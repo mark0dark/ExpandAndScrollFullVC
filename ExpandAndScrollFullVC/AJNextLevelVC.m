@@ -1,10 +1,3 @@
-//
-//  AJNextLevelVC.m
-//  ExpandAndScrollFullVC
-//
-//  Created by Jianwen on 13-7-16.
-//  Copyright (c) 2013年 Dark. All rights reserved.
-//
 
 #import "AJNextLevelVC.h"
 
@@ -13,6 +6,8 @@
 @end
 
 @implementation AJNextLevelVC
+
+#pragma mark -- Button Clicked Even
 
 -(void)popBack
 {
@@ -28,6 +23,8 @@
     }
 }
 
+#pragma mark -- Init View Frame
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
@@ -37,6 +34,8 @@
     UIBarButtonItem *leftBtnItem = [[UIBarButtonItem alloc] initWithTitle:@"popBack" style:UIBarButtonItemStyleBordered target:self action:@selector(popBack)];
     self.navigationItem.leftBarButtonItem = leftBtnItem;
 }
+
+#pragma mark -- Memory
 
 - (void)didReceiveMemoryWarning
 {

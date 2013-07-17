@@ -9,8 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "AJExpandAndScrollFullVC.h"
 
-@interface AJFirstViewController : AJExpandAndScrollFullVC
-<ExpandableAndScrollFullDelegate>
+@interface AJFirstViewController : AJExpandAndScrollFullVC <ExpandableAndScrollFullDelegate>
 {
     UITableView* _tableView;
 
